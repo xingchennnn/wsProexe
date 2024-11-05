@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; connect-src 'self' http://49.234.58.117:55556; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy"
+    content="connect-src 'self' http://49.234.58.117:55556; script-src 'self'" />
+  <title>ws</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+
+<body>
+  <!-- 创建一个用于旋转的 div 元素 -->
+  <div class="rotating-bg"></div>
+  <div class="container">
+    <label for="username">用户名</label>
+    <input type="text" id="username" name="username" required>
+    <label for="password">密码</label>
+    <input type="password" id="password" name="password" required>
+    <button id="loginBtn" type="submit">登录</button>
+  </div>
+  <button id="btn">点击我！</button>
+</body>
+
+</html>
+<script src="index.js"></script>
